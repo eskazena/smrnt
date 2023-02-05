@@ -1,0 +1,242 @@
+#mapa{
+	padding:0;
+	border-bottom: solid 2px #eeeeee;
+	height: 100vh;
+	position: relative;
+}
+
+.navigator{
+	position: absolute;
+	bottom:25px;
+	left:50%;
+	z-index:2;
+}
+.navigator a{
+	font-size: 2em;
+	display: block;
+	color:#ccc;
+	text-decoration: none;
+	border:0;
+	transition: all .5s;
+}
+.navigator a:hover{
+	color:#36A9E1;
+}
+
+#mapa img{
+	display:block;
+	width: 100%;
+}
+
+#mapa nav{
+	width:100%;
+	height: 80px;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0, 0, 0, .2);
+}
+#mapa ul{
+	list-style: none;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 20px;
+	margin: 0;
+	padding:0;
+}
+#mapa nav a{
+	display: block;
+	cursor: pointer;
+	border-radius: 50%;
+}
+#mapa nav a img{
+	display: block;
+	width: 50px;
+}
+#mapa nav a:hover{
+	box-shadow:1px 1px 7px rgba(0, 0, 0, .7);
+}
+.selector{
+	position: absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100vh;
+	background-color: #F2F2F3;
+	display:flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+#uno,
+#dos:target,
+#tres:target,
+#cuatro:target,
+#cinco:target,
+#seis:target,
+#siete:target{
+	z-index:1;
+}
+#uno nav li:nth-child(1) img,
+#dos:target nav li:nth-child(2) img,
+#tres:target nav li:nth-child(3) img,
+#cuatro:target nav li:nth-child(4) img,
+#cinco:target nav li:nth-child(5) img,
+#seis:target nav li:nth-child(6) img,
+#siete:target nav li:nth-child(7) img{
+	transform: scale(1.2);
+}
+.info{
+	display:flex;
+	justify-content: center;
+	align-items: flex-start;
+	column-gap: 30px;
+	width: 50%;
+	margin: 0 auto;
+	padding: 50px 0 20px;
+
+}
+#mapa .info img{
+	display:block;
+	width: 100px;
+
+}
+.text{
+	text-align: left;
+}
+#mapa h1{
+	font-size: 2em;
+	font-weight: 700;
+	margin-bottom: .2em;
+}
+#uno h1{
+	color:#36A9E1;
+	}
+#dos h1{
+	color:#ED2C7E;
+}
+#tres h1{
+	color:#37C5CB;
+}
+#cuatro h1{
+	color:#40B0AE;
+}
+#cinco h1{
+	color:#DBAC20;
+}
+#seis h1{
+	color:#CF4B62;
+}
+#siete h1{
+	color:#4A2996;
+}
+.text p{
+	font-size: .8em;
+	line-height: 1.5em;
+}
+
+/* TEXT SLIDER */
+
+.typing-slider {
+  text-align: center;
+  white-space: nowrap;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.typing-slider p {
+  position: relative;
+  display: inline;
+  font-size: 0;
+  letter-spacing: 0;
+  animation: slide 15s step-start infinite;
+}
+
+.typing-slider p::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-left: 3px solid black;
+  background-color: #4696e5;
+  animation: typing 5s infinite, cursor 1s infinite;
+}
+
+.typing-slider p:nth-child(1) {
+  animation-delay: 0s;
+}
+.typing-slider p:nth-child(1)::after {
+  animation-delay: 0s;
+  animation-timing-function: steps(35), step-end;
+}
+
+.typing-slider p:nth-child(2) {
+  animation-delay: 5s;
+}
+.typing-slider p:nth-child(2)::after {
+  animation-delay: 5s;
+  animation-timing-function: steps(43), step-end;
+}
+
+.typing-slider p:nth-child(3) {
+  animation-delay: 10s;
+}
+.typing-slider p:nth-child(3)::after {
+  animation-delay: 10s;
+  animation-timing-function: steps(50), step-end;
+}
+@keyframes cursor {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: black;
+  }
+}
+@keyframes typing {
+  from {
+    width: 100%;
+  }
+  70%, to {
+    width: 0;
+  }
+}
+@keyframes slide {
+  33.3333333333% {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+  to {
+    font-size: 0;
+    letter-spacing: 0;
+  }
+}
+#one p, #three p{
+	width: 50%;
+	margin: 0 auto 20px;
+}
+#one img{
+	display:block;
+	width:10em;
+	margin: 0 auto 20px;
+	filter:brightness(.5);
+	mix-blend-mode: hard-light;
+}
+#one span ,#two span{
+	font-weight: 700;
+}
+#two h3{
+	font-weight: 700;
+	color:#36A9E1;
+}
+#three{
+	padding-top: 3.5em;
+}
+#three .button.primary:hover{
+	background-color: #eee;
+}
+#three p{
+	font-size: 1em;
+}
