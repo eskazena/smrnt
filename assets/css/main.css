@@ -3914,7 +3914,7 @@ input, select, textarea {
 				height: 100vh;
 			}
 			#header .content img{
-				width:50%;
+				width:400px;
 				margin:0 auto 30px;
 			}
 			
@@ -3935,7 +3935,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) and (orientation: portrait) {
 
 			#header {
-				padding: 6em 3em 4em 3em ;
+				padding: 2em 3em;
 				-moz-flex-direction: column-reverse;
 				-webkit-flex-direction: column-reverse;
 				-ms-flex-direction: column-reverse;
