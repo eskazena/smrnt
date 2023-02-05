@@ -25,7 +25,7 @@
 
 #mapa img{
 	display:block;
-	width: 100%;
+	width: 80%;
 }
 
 #mapa nav{
@@ -92,10 +92,8 @@
 	justify-content: center;
 	align-items: flex-start;
 	column-gap: 30px;
-	width: 50%;
+	width: 70%;
 	margin: 0 auto;
-	padding: 50px 0 20px;
-
 }
 #mapa .info img{
 	display:block;
@@ -239,4 +237,31 @@
 }
 #three p{
 	font-size: 1em;
+}
+@media screen and (min-width:980px){
+	.text p{
+		font-size: 1.3em;
+	}
+}
+@media screen and (max-width:980px){
+	.info{
+		display:block;
+		width: 70%;
+		margin: 0 auto;
+	}
+	#mapa .info img{
+		margin-bottom: 30px;
+
+	}
+}
+
+@media screen and (min-width:650px){
+	.text p{
+		font-size: 1.1em;
+	}
+}
+@media screen and (min-width:480px){
+	.text p{
+		font-size: 1em;
+	}
 }

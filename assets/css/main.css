@@ -3911,9 +3911,13 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			#header {
-				height: auto;
-				min-height: 0;
+				height: 100vh;
 			}
+			#header .content img{
+				width:50%;
+				margin:0 auto 30px;
+			}
+			
 
 				#header .content {
 					margin: -2em 4em 0 0;
