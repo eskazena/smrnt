@@ -136,10 +136,13 @@
 
 /* TEXT SLIDER */
 
+.typing{
+	display:none;
+}
+
 .typing-slider {
   text-align: center;
   white-space: nowrap;
-  width: 80%;
   margin: 0 auto;
 }
 
@@ -253,6 +256,17 @@
 		margin-bottom: 30px;
 
 	}
+		@keyframes slide {
+  33.3333333333% {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+  }
+  to {
+    font-size: 0;
+    letter-spacing: 0;
+  }
+}
+
 }
 
 @media screen and (min-width:650px){
@@ -264,6 +278,12 @@
 @media screen and (max-width:736px){
 		#header .content img{
 			width: 300px;
+	}
+		.typing-slider{
+		display:none;
+	}
+	.typing{
+		display:block;
 	}
 }
 @media screen and (min-width:480px){
